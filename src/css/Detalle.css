@@ -1,0 +1,20 @@
+.contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 400px;
+    margin: 34px 450px 40px;
+    background: rgb(198, 220, 219); 
+    padding: 26px;
+    box-shadow: 8px 8px 8px grey;
+    border-radius: 10px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+p{
+    font-size: 19px;
+    font-family: cambria;
+}
