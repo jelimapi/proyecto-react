@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate,useParams } from 'react-router-dom'
 import '../css/Detalle.css';
 
 const Detalle = () => {
 
     const {artID} = useParams();
+    const navigate = useNavigate();
     const [ListadoArticulos, setListadoArticulos] = useState([]);
 
     useEffect(() => {
@@ -24,6 +25,8 @@ const Detalle = () => {
     }
     else{
         return (
+         <>
+            <button onClick={() => navigate('/articulos')}> Atras </button>
             <div className= "contenedor1">
                 <h2> {artinfo.nombre} </h2>
                 <img src={artinfo.imagen} ></img>
@@ -32,7 +35,9 @@ const Detalle = () => {
                 <p> <b>DESCRIPCION:</b> {artinfo.descripcion} </p>
                 <p> <b>PRECIO:</b> ${artinfo.precio} </p>
             </div>
+            </>
             )
+           
     }
     
 }

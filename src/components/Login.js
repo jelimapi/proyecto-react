@@ -8,7 +8,7 @@ const Login = () => {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
   
-    const handleSumit = (event) => {
+    const handleSubmit = (event) => {
 
         event.preventDefault();
         
@@ -19,7 +19,7 @@ const Login = () => {
         })
         .then( response => {
             if(response.ok){
-                navigate('/articulos');
+                navigate('/editar');
             }else{
                 console.log("no hubo conexion");
             }
@@ -30,7 +30,7 @@ const Login = () => {
     <div className='container'>
         <div className='card'>
             <h2 className='text'>Inicio de sesión</h2>
-            <form onSubmit={handleSumit}>
+            <form onSubmit={handleSubmit}>
                 <input 
                     type='text'
                     placeholder='Nombre de usuario'

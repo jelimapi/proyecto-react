@@ -1,0 +1,23 @@
+.container-editar{
+    margin: 50px 560px 50px;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    box-shadow: 7px 7px 7px rgb(170, 175, 176);
+    width: 330px;
+    height: 360px;
+    padding: 15px 25px;
+    background-color: rgb(222, 241, 241);
+    text-align: center;
+    align-items: center;
+}
+
+.form2{
+    margin: 5px 25px 5px;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    width: 230px;
+    height: 290px;
+    padding: 10px 25px;
+    background-color: rgb(222, 241, 241); 
+    text-align: left;
+}

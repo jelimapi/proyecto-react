@@ -10,10 +10,25 @@
     box-shadow: 8px 8px 8px grey;
     border-radius: 10px;
 }
+button{
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+    background-color: aqua;
+    border: 1px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.contenedor1 img:hover{
+transform: scale(160%);
+}
+
 img{
     width: 150px;
     height: 150px;
 }
+
 p{
     font-size: 19px;
     font-family: cambria;

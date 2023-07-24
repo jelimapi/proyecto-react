@@ -1,7 +1,6 @@
 import '../css/Home.css';
-
 import boxeo from "../img/boxeo.png";
-import publicidad from "../video/publicidad el 1.mp4"
+import publicidad from "../video/publicidad el 1.mp4";
 
 function Home() {
   return (
@@ -11,8 +10,7 @@ function Home() {
         <section classNames="contenedor" id="servicio">
             <h2 className="subtitulo">NUESTRO SERVICIO</h2>
             <div className="contenedor-servicio">
-                
-                    <img src={boxeo} alt="" />           
+                <img src={boxeo} alt="" />           
                 <video controls src={publicidad} type="video/mp4#t=00,01" />
                                         
                 <div className="servicio">
